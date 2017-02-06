@@ -2,6 +2,13 @@
 collection of scripts for everquest
 
 
+
+
+Idle Script exit with ctrl + alt + f1
+
+
+
+
 Requirements:
 
 
