@@ -2,6 +2,15 @@
 collection of scripts for everquest
 
 
+Requirements:
+
+
+
+
+https://autohotkey.com/
+
+
+
 Known Issues:
 
 
