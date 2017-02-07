@@ -119,6 +119,7 @@ loop
 	if (sitFlag == 1){
 		send, ^s ;sit
 		sleep, %manaSitTimeMS%
+		send, w
 		manaLeft := manaMax
 	}
 
