@@ -54,6 +54,8 @@ goto, CloseApp
 if longestSpell <= 0
 {
 longestSpell := 6
+}else{
+longestSpell := longestSpell + 3 ;add some space for recovery
 }
 manaGain := 2 + (meditateLevel / meditateDivder)
 manaSitTimeSeconds := (manaMax / manaGain) * tickRate
