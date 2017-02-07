@@ -10,7 +10,7 @@ castLastLoop2 := 0
 castLastLoop3 := 0
 castLastLoop4 := 0
 
-Gui, Add, Text,,  Fill out the form, and then push ok, click on everquest. it will wait 10 seconds and then start casting. If you would like to skip a spell, put a zero in its place
+Gui, Add, Text,,  Fill out the form, and then push ok, click on everquest. it will wait 10 seconds and then start casting.
 
 Gui, Add, Text,,  enter your Max Mana:
 Gui, Add, Edit, vmanaMax
@@ -121,7 +121,14 @@ loop
 	if (sitFlag == 1){
 		send, ^s ;sit
 		sleep, %manaSitTimeMS%
-		send, w
+		send, {w down}
+		sleep, 100
+		send, {w up}
+		sleep, 100
+		send, {s down}
+		sleep, 100
+		send, {s up}
+		sitFlag := 0
 		manaLeft := manaMax
 	}
 
